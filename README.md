@@ -1,12 +1,45 @@
-# React + Vite
+🛍️ Landing Shop Page
+🚀 Demo
+👉 See the live demo here
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🛣️ Roadmap
+✅ Setup project structure (Vite, TailwindCSS, React)
 
-Currently, two official plugins are available:
+✅ Build initial Landing Page
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Implement animations with Framer Motion
 
-## Expanding the ESLint configuration
+Connect to external API (products, authentication)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Create Product Listing Page
+
+Create Product Detail Page
+
+Develop Shopping Cart functionality
+
+Add Login and Authentication system
+
+Implement Loading and Error States
+
+Ensure Responsive Design (Desktop / Tablet / Mobile)
+
+Optimize performance and accessibility
+
+Deploy the project to production (Vercel/Netlify)
+
+🛠️ Technologies Used
+
+![ReactJS](https://img.shields.io/badge/react-19.1-61DBFB?style=for-the-badge&logo=react&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-38bdf8?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![FrameMotion](https://img.shields.io/badge/FrameMotion-yellow?style=for-the-badge)
+
+🖼️ Project Visualization
+
+#### [Mobile.pdf](file/Mobile.pdf)
+
+#### [PC.pdf](file/PC.pdf)
+
+📌 Notes
+This project is still in progress – functionality and design might change.
+
+Some features (e.g., full registration system, checkout process) may be added later.
