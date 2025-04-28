@@ -1,45 +1,49 @@
-🛍️ Landing Shop Page
-🚀 Demo
-👉 See the live demo here
+# 🛍️ Shop Page (CooShop)
 
-🛣️ Roadmap
-✅ Setup project structure (Vite, TailwindCSS, React)
+## 🚀 Demo
 
-✅ Build initial Landing Page
+### 👉 [See the live demo here](cooshop.netlify.app)
 
-Implement animations with Framer Motion
+## 🛣️ Roadmap
 
-Connect to external API (products, authentication)
+### ✅ Setup project structure (Vite, TailwindCSS, React)
 
-Create Product Listing Page
+### ✅ Build initial Landing Page
 
-Create Product Detail Page
+#### Implement animations with Framer Motion
 
-Develop Shopping Cart functionality
+#### Connect to external API (products, authentication)
 
-Add Login and Authentication system
+#### Create Product Listing Page
 
-Implement Loading and Error States
+#### Create Product Detail Page
 
-Ensure Responsive Design (Desktop / Tablet / Mobile)
+#### Develop Shopping Cart functionality
 
-Optimize performance and accessibility
+#### Add Login and Authentication system
 
-Deploy the project to production (Vercel/Netlify)
+#### Implement Loading and Error States
 
-🛠️ Technologies Used
+#### Ensure Responsive Design (Desktop / Tablet / Mobile)
+
+#### Optimize performance and accessibility
+
+#### Deploy the project to production (Vercel/Netlify)
+
+## 🛠️ Technologies Used
 
 ![ReactJS](https://img.shields.io/badge/react-19.1-61DBFB?style=for-the-badge&logo=react&logoColor=white)
 ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-38bdf8?style=for-the-badge&logo=tailwindcss&logoColor=white)
 ![FrameMotion](https://img.shields.io/badge/FrameMotion-yellow?style=for-the-badge)
 
-🖼️ Project Visualization
+## 🖼️ Project Visualization
 
 #### [Mobile.pdf](file/Mobile.pdf)
 
 #### [PC.pdf](file/PC.pdf)
 
-📌 Notes
-This project is still in progress – functionality and design might change.
+## 📌 Notes
 
-Some features (e.g., full registration system, checkout process) may be added later.
+##### This project is still in progress – functionality and design might change.
+
+##### Some features (e.g., full registration system, checkout process) may be added later.
