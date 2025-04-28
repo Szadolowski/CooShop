@@ -38,9 +38,9 @@
 
 ## 🖼️ Project Visualization
 
-#### [Mobile.pdf](file/Mobile.pdf)
+#### [Mobile.pdf](File/Mobile.pdf)
 
-#### [PC.pdf](file/PC.pdf)
+#### [PC.pdf](File/PC.pdf)
 
 ## 📌 Notes
 
