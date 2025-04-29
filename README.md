@@ -2,7 +2,7 @@
 
 ## 🚀 Demo
 
-### 👉 [See the live demo here](cooshop.netlify.app)
+### 👉 [See the live demo here](https://cooshop.netlify.app/)
 
 ## 🛣️ Roadmap
 
