@@ -13,7 +13,7 @@ export default function HeaderSection() {
     return (
       <div
         className={`${
-          headerIMG == number ? "bg-pink-800 w-9" : "border border-pink-800 w-6"
+          headerIMG == number ? "bg-pink-800 w-9" : "border border-pink-800 w-6 bg-[#a3004c1a]"
         } rounded-2xl h-2`}
         onClick={() => setHeaderIMG(number)}
       ></div>
