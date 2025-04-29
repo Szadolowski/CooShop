@@ -38,6 +38,18 @@
 
 ## 🖼️ Project Visualization
 
+#### Header Desktop
+
+![HeaderDesktop](File/HeaderDesktop.png)
+
+#### Header Mobile
+
+![HeaderMobile](File/HeaderMobile.png)
+
+#### Featured Products
+
+![FeaturedProducts](File/FeaturedProducts.png)
+
 #### [Mobile.pdf](File/Mobile.pdf)
 
 #### [PC.pdf](File/PC.pdf)
