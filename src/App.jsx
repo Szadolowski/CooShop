@@ -2,6 +2,7 @@ import React from "react";
 import HeaderSection from "./components/HeaderSection";
 import ProductSection from "./components/ProductSection";
 import FooterSection from "./components/FooterSection";
+import NavSection from "./components/NavSection";
 
 const PromotionProduct = [
   {
@@ -51,6 +52,7 @@ const PromotionProduct = [
 function App() {
   return (
     <>
+      <NavSection />
       <div>
         <HeaderSection />
         <div className="relative flex flex-col items-center justify-items-start bg-gray-100 p-5 pb-52">
@@ -59,8 +61,8 @@ function App() {
             Discover our carefully selected collection of the latest fashion and jewelry trends.
           </p>
           <ProductSection base={PromotionProduct} sectionName={"Clothes"} />
-          <FooterSection />
         </div>
+        <FooterSection />
       </div>
     </>
   );
