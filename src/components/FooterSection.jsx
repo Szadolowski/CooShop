@@ -2,6 +2,9 @@ import Instagram from "../svg/Instagram";
 import X from "../svg/X";
 import Facebook from "../svg/Facebook";
 import Youtube from "../svg/Youtube";
+import Envelope from "../svg/Envelope";
+import Telephone from "../svg/Telephone";
+import Linkedin from "../svg/Linkedin";
 
 export default function FooterSection() {
   return (
@@ -15,7 +18,7 @@ export default function FooterSection() {
             Your favorite online store with fashionable clothing and jewelry. certified, the latest
             trends straight to your home.
           </p>
-          <div className="flex flex-col lg:flex-row lg:space-x-5 lg:space-y-0 space-y-2 mt-5">
+          <div className="flex flex-row space-x-5 mt-5">
             <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
               <Instagram />
             </a>
@@ -59,20 +62,27 @@ export default function FooterSection() {
         <div className="flex flex-col px-5 lg:w-1/4">
           <h5 className="text-amber-50 text-2xl font-bold my-4">Contact</h5>
           <div className="flex flex-col space-y-0.5 text-sm text-gray-400">
-            <a href="https://www.linkedin.com/in/rafalcurzydlo/" className="group">
-              Linkedin:{" "}
+            <a
+              href="https://www.linkedin.com/in/rafalcurzydlo/"
+              className="group flex flex-row items-center space-x-2"
+            >
+              <Linkedin />
               <span className="group-hover:text-white group-hover:cursor-pointer">
                 Rafał Curzydło
               </span>
             </a>
-            <a href="mailto:rafalcurzydlo.biz@gmail.com" className="group">
-              email:{" "}
+            <a
+              href="mailto:rafalcurzydlo.biz@gmail.com"
+              className="group flex flex-row items-center space-x-2"
+            >
+              <Envelope />
               <span className="group-hover:text-white group-hover:cursor-pointer">
                 rafalcurzydlo.biz@gmail.com
               </span>
             </a>
-            <a href="tel:+48792802918" className="group">
-              tel: <span className="group-hover:text-white group-hover:cursor-pointer">Number</span>
+            <a href="tel:+48792802918" className="group flex flex-row items-center space-x-2">
+              <Telephone />
+              <span className="group-hover:text-white group-hover:cursor-pointer">Number</span>
             </a>
           </div>
         </div>

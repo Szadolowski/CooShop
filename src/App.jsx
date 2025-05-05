@@ -18,11 +18,20 @@ function App() {
           </p>
           <ProductSection base={PromotionCloth} sectionName={"Clothes"} />
           <ProductSection base={PromotionJewelry} sectionName={"Jewelry"} />
-          <div className="absolute bottom-0 left-0 right-0 flex justify-center items-center mb-5">
-            <button className="border-2 border-black rounded-3xl px-14 py-2 text-xl hover:bg-black hover:text-white transition duration-300 ease-in-out hover:cursor-pointer">
-              More Products
-            </button>
-          </div>
+          <button className="border-2 border-black rounded-3xl px-14 py-2 text-xl hover:bg-black hover:text-white transition duration-300 ease-in-out hover:cursor-pointer">
+            More Products
+          </button>
+        </div>
+        <div className="relative flex flex-col items-center justify-items-start bg-gray-100 p-5 pb-52">
+          <h2 className="text-center font-bold text-4xl">Category</h2>
+          <section className="relative overflow-hidden rounded-lg bg-gray-100 h-80 w-80 group m-10 group">
+            <img
+              src="https://images.unsplash.com/photo-1608042314453-ae338d80c427?q=80&w=1310&auto=format&fit=crop"
+              alt=""
+              className="h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-110"
+            />
+            <div className="absolute inset-0 bg-black opacity-50 "></div>
+          </section>
         </div>
         <FooterSection />
       </div>
