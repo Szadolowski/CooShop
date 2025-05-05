@@ -7,21 +7,17 @@ export default function ProductSection({ base, sectionName }) {
         <h4 className="font-bold text-2xl">{sectionName}</h4>
         <div className="w-full bg-gray-600 h-[0.5px]"></div>
       </div>
-      {/* Kontener przewijania z odstępem lg:gap-x-10 */}
-      <div className="space-y-10 lg:space-y-0 lg:flex lg:flex-row lg:justify-start lg:items-start px-5 mb-10 lg:overflow-x-scroll lg:gap-x-10">
-        {" "}
-        {/* <-- Ta klasa dodaje odstęp */}
+      <div className="space-y-10 lg:space-y-0px-5 mb-10 lg:space-x-10 lg:flex lg:flex-row lg:overflow-x-auto lg:max-w-screen lg:px-10">
         {base.map((product, index) => (
-          <div key={index} className="flex-shrink-0 w-64">
-            <ProductCard
-              image={product.image}
-              title={product.title}
-              price={product.price}
-              promotion={product.promotion}
-              promotionValue={product.promotionValue}
-              promotionPercent={product.promotionPercent}
-            />
-          </div>
+          <ProductCard
+            key={index}
+            image={product.image}
+            title={product.title}
+            price={product.price}
+            promotion={product.promotion}
+            promotionValue={product.promotionValue}
+            promotionPercent={product.promotionPercent}
+          />
         ))}
       </div>
     </>
