@@ -3,105 +3,7 @@ import HeaderSection from "./components/HeaderSection";
 import ProductSection from "./components/ProductSection";
 import FooterSection from "./components/FooterSection";
 import NavSection from "./components/NavSection";
-
-const PromotionCloth = [
-  {
-    image:
-      "https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?q=80&w=1335&auto=format&fit=crop",
-    title: "Product 1",
-    price: 29.99,
-    promotion: true,
-    promotionValue: "-20%",
-    promotionPercent: 20,
-  },
-  {
-    image:
-      "https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?q=80&w=1335&auto=format&fit=crop",
-    title: "Product 1",
-    price: 29.99,
-    promotion: true,
-    promotionValue: "-20%",
-    promotionPercent: 20,
-  },
-  {
-    image:
-      "https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?q=80&w=1335&auto=format&fit=crop",
-    title: "Product 1",
-    price: 29.99,
-    promotion: true,
-    promotionValue: "-20%",
-    promotionPercent: 20,
-  },
-  {
-    image:
-      "https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?q=80&w=1335&auto=format&fit=crop",
-    title: "Product 1",
-    price: 29.99,
-    promotion: true,
-    promotionValue: "-20%",
-    promotionPercent: 20,
-  },
-  {
-    image:
-      "https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?q=80&w=1335&auto=format&fit=crop",
-    title: "Product 1",
-    price: 29.99,
-  },
-  {
-    image:
-      "https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?q=80&w=1335&auto=format&fit=crop",
-    title: "Product 1",
-    price: 29.99,
-  },
-  {
-    image:
-      "https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?q=80&w=1335&auto=format&fit=crop",
-    title: "Product 1",
-    price: 29.99,
-  },
-  {
-    image:
-      "https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?q=80&w=1335&auto=format&fit=crop",
-    title: "Product 1",
-    price: 29.99,
-  },
-];
-
-const PromotionJewelry = [
-  {
-    image:
-      "https://images.unsplash.com/photo-1608042314453-ae338d80c427?q=80&w=1310&auto=format&fit=crop",
-    title: "Pierścionek z diamentem",
-    price: 499.99,
-    promotion: true,
-    promotionValue: "-20%",
-    promotionPercent: 20,
-  },
-  {
-    image:
-      "https://images.unsplash.com/photo-1608042314453-ae338d80c427?q=80&w=1310&auto=format&fit=crop",
-    title: "Pierścionek z diamentem",
-    price: 499.99,
-    promotion: true,
-    promotionValue: "-20%",
-    promotionPercent: 20,
-  },
-  {
-    image:
-      "https://images.unsplash.com/photo-1608042314453-ae338d80c427?q=80&w=1310&auto=format&fit=crop",
-    title: "Pierścionek z diamentem",
-    price: 499.99,
-  },
-  {
-    image:
-      "https://images.unsplash.com/photo-1608042314453-ae338d80c427?q=80&w=1310&auto=format&fit=crop",
-    title: "Pierścionek z diamentem",
-    price: 499.99,
-    promotion: true,
-    promotionValue: "-30%",
-    promotionPercent: 30,
-  },
-];
+import { PromotionCloth, PromotionJewelry } from "./data.js";
 
 function App() {
   return (
@@ -117,7 +19,7 @@ function App() {
           <ProductSection base={PromotionCloth} sectionName={"Clothes"} />
           <ProductSection base={PromotionJewelry} sectionName={"Jewelry"} />
           <div className="absolute bottom-0 left-0 right-0 flex justify-center items-center mb-5">
-            <button className="border-2 border-black rounded-3xl px-14 py-2 text-xl">
+            <button className="border-2 border-black rounded-3xl px-14 py-2 text-xl hover:bg-black hover:text-white transition duration-300 ease-in-out hover:cursor-pointer">
               More Products
             </button>
           </div>
