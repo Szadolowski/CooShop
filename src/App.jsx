@@ -3,7 +3,7 @@ import HeaderSection from "./components/HeaderSection";
 import ProductSection from "./components/ProductSection";
 import FooterSection from "./components/FooterSection";
 import NavSection from "./components/NavSection";
-import { PromotionCloth, PromotionJewelry } from "./data.js";
+import { PromotionCloth, PromotionJewelry, Category } from "./data.js";
 
 function App() {
   return (
@@ -24,14 +24,19 @@ function App() {
         </div>
         <div className="relative flex flex-col items-center justify-items-start bg-gray-100 p-5 pb-52">
           <h2 className="text-center font-bold text-4xl">Category</h2>
-          <section className="relative overflow-hidden rounded-lg bg-gray-100 h-80 w-80 group m-10 group">
-            <img
-              src="https://images.unsplash.com/photo-1608042314453-ae338d80c427?q=80&w=1310&auto=format&fit=crop"
-              alt=""
-              className="h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-110"
-            />
-            <div className="absolute inset-0 bg-black opacity-50 "></div>
-          </section>
+          {Category.map((category) => (
+            <section className="relative overflow-hidden rounded-lg bg-gray-100 h-80 w-80 group m-10 group">
+              <img
+                src={category.image}
+                alt={category.title}
+                className="h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-black opacity-50 "></div>
+              <h3 className="absolute left-2 bottom-2 text-gray-200 text-xl font-semibold group-hover:scale-110 group-hover: transition duration-300 ease-in-out">
+                {category.title}
+              </h3>
+            </section>
+          ))}
         </div>
         <FooterSection />
       </div>
