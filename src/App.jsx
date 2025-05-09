@@ -3,6 +3,7 @@ import HeaderSection from "./components/HeaderSection";
 import ProductSection from "./components/ProductSection";
 import FooterSection from "./components/FooterSection";
 import NavSection from "./components/NavSection";
+import CounterTime from "./components/CounterTime";
 import { PromotionCloth, PromotionJewelry, Category } from "./data.js";
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
               </h3>
             </section>
           ))}
+          <CounterTime />
         </div>
         <FooterSection />
       </div>
