@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 
-const CounterTime = () => {
+const CounterTime = ({ title, description, promotionDate }) => {
   const [timeData] = useState(() => {
-    const calculatedEndDate = new Date(new Date().getTime() + 1000 * 60 * 60 * 24 * 7);
+    const calculatedEndDate = new Date(promotionDate);
     const endTime = calculatedEndDate.getTime();
     const difference = endTime - new Date().getTime();
 
@@ -25,7 +25,24 @@ const CounterTime = () => {
     const hours = Math.floor((totalSeconds % (3600 * 24)) / 3600);
     const minutes = Math.floor((totalSeconds % 3600) / 60);
     const seconds = Math.floor(totalSeconds % 60);
-    return `${days}d ${hours}h ${minutes}m ${seconds}s`;
+    const time = [
+      { key: `days`, value: days },
+      { key: `hours`, value: hours },
+      { key: `minutes`, value: minutes },
+      { key: `seconds`, value: seconds },
+    ];
+    return (
+      <div className="flex flex-row items-center justify-center space-x-7">
+        {time.map((item, index) => (
+          <div key={index} className="flex flex-col items-center justify-center w-15">
+            <div className="text-3xl font-bold bg-pink-600 rounded-md p-3 w-full flex items-center justify-center">
+              <span className="text-2xl font-bold">{item.value}</span>
+            </div>
+            <div className="pt-2 text-gray-400">{item.key}</div>
+          </div>
+        ))}
+      </div>
+    );
   };
 
   useEffect(() => {
@@ -43,9 +60,16 @@ const CounterTime = () => {
   }, []);
 
   return (
-    <div>
-      <div>Promocja trwa do {endDate.toLocaleString}</div>
+    <div className="text-white border-b-2 border-white flex flex-col items-center justify-center bg-black p-5 pb-10 w-full">
+      {title && <h2 className="text-center font-bold text-4xl text-white">{title}</h2>}
+      {description && <p className="text-center text-pretty font-light mt-2 mb-14 px-5 text-white">{description}</p>}
+      <div className="text-gray-400 font-light pb-2">
+        promotion lasts until {`${endDate.getDate()}.${endDate.getMonth() + 1}.${endDate.getFullYear()}`}
+      </div>
       <div>{formatTime(remainingSeconds)}</div>
+      <button className="mt-10 bg-pink-600 rounded-3xl font-bold px-14 py-2 text-xl hover:font-black hover:bg-pink-700 transition duration-300 ease-in-out hover:cursor-pointer">
+        Check now!
+      </button>
     </div>
   );
 };
