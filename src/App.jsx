@@ -15,7 +15,7 @@ function App() {
       <NavSection />
       <div>
         <HeaderSection />
-        <div className="relative flex flex-col items-center justify-items-start bg-gray-100 p-5 pb-52">
+        <div className="relative flex flex-col items-center justify-items-start bg-gray-100 pt-10 pb-10">
           <h2 className="text-center font-bold text-4xl">Featured Products</h2>
           <p className="text-center text-pretty font-light mt-2 mb-14 px-5">
             Discover our carefully selected collection of the latest fashion and jewelry trends.
@@ -26,9 +26,7 @@ function App() {
             More Products
           </button>
         </div>
-        <div className="relative flex flex-col items-center justify-items-start bg-gray-100 p-5 pb-52">
-          <CategoryCard data={category} />
-        </div>
+        <CategoryCard data={category} />
         <CounterTime
           title={"Summer sale"}
           description={

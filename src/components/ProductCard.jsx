@@ -16,8 +16,8 @@ export default function ProductCard({
     setIsFavorite(!isFavorite);
   };
   return (
-    <section id={`${title}${price}${id}`} key={`${title}${price}${id}`} className="w-80">
-      <section className="relative overflow-hidden rounded-lg bg-gray-100 h-80 w-80 group">
+    <section id={`${title}${price}${id}`} key={`${title}${price}${id}`}>
+      <section className="relative overflow-hidden rounded-lg bg-gray-100 h-72 w-96 group">
         <img
           src={image}
           alt={`${title} image`}
