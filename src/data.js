@@ -102,12 +102,4 @@ export const category = [
     image: "https://images.unsplash.com/photo-1608042314453-ae338d80c427?q=80&w=1310&auto=format&fit=crop",
     title: "Akcesoria",
   },
-  {
-    image: "https://images.unsplash.com/photo-1608042314453-ae338d80c427?q=80&w=1310&auto=format&fit=crop",
-    title: "Obuwie",
-  },
-  {
-    image: "https://images.unsplash.com/photo-1608042314453-ae338d80c427?q=80&w=1310&auto=format&fit=crop",
-    title: "Torby",
-  },
 ];

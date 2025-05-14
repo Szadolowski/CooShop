@@ -7,7 +7,7 @@ export default function ProductSection({ base, sectionName }) {
         <h4 className="font-bold text-2xl">{sectionName}</h4>
         <div className="w-full bg-gray-600 h-[0.5px]"></div>
       </div>
-      <div className="space-y-10 lg:space-y-0px-5 mb-10 lg:space-x-10 lg:flex lg:flex-row lg:overflow-x-auto lg:max-w-screen lg:px-10">
+      <div className="space-y-10 lg:space-y-0px-5 mb-10 lg:space-x-10 lg:flex lg:flex-row lg:overflow-x-auto lg:max-w-screen lg:px-10 w-full sm:px-32 px-14">
         {base.map((product, index) => (
           <ProductCard
             key={index}
