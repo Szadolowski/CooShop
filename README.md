@@ -10,7 +10,7 @@
 
 ### ✅ Build initial Landing Page
 
-#### Implement animations with Framer Motion
+### ✅ Implement animations with Framer Motion
 
 #### Connect to external API (products, authentication)
 

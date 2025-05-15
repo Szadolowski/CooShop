@@ -1,6 +1,6 @@
 export default function NavSection() {
   return (
-    <nav className="sticky top-0 flex flex-row justify-between items-center bg-gray-100 p-5 shadow-md z-30">
+    <nav className="sticky top-0 flex flex-row justify-between items-center p-5 shadow-md z-30">
       <h1 className="text-3xl font-black text-gray-800">
         <span className="text-pink-600">Coo</span>Shop
       </h1>
