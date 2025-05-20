@@ -1,4 +1,5 @@
 import ProductCard from "./ProductCard";
+import ProductWindow from "./ProductWindow";
 
 export default function ProductSection({ base, sectionName }) {
   return (
@@ -11,6 +12,7 @@ export default function ProductSection({ base, sectionName }) {
         {base.map((product, index) => (
           <ProductCard
             key={index}
+            id={index}
             image={product.image}
             title={product.title}
             price={product.price}

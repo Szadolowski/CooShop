@@ -12,11 +12,15 @@
 
 ### ✅ Implement animations with Framer Motion
 
+### ✅ Ensure Responsive Design (Desktop / Tablet / Mobile)
+
+### ✅ Create Product Detail Page
+
+### ✅ Deploy the project to production (Netlify)
+
 #### Connect to external API (products, authentication)
 
 #### Create Product Listing Page
-
-#### Create Product Detail Page
 
 #### Develop Shopping Cart functionality
 
@@ -24,11 +28,7 @@
 
 #### Implement Loading and Error States
 
-#### Ensure Responsive Design (Desktop / Tablet / Mobile)
-
 #### Optimize performance and accessibility
-
-#### Deploy the project to production (Vercel/Netlify)
 
 ## 🛠️ Technologies Used
 

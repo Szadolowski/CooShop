@@ -33,7 +33,9 @@ function App() {
             "Take advantage of this unique opportunity and get a discount of up to 50% on all products from the summer collection. Limited time offer!"
           }
           promotionDate={promotionTime}
-          image={"https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=2070&auto=format&fit=crop"}
+          image={
+            "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=2070&auto=format&fit=crop"
+          }
         />
         <FooterSection />
       </div>
