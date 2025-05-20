@@ -16,10 +16,19 @@ const ProductWindow = ({
         className="absolute top-0 left-0 w-full h-full bg-black opacity-20"
         onClick={handleClose}
       ></div>
-      <motion.section layoutId={layoutId} className="w-3/4 bg-white z-40">
+      <motion.section
+        layoutId={layoutId}
+        className="relative w-3/4 bg-white z-40 rounded-2xl shadow-lg overflow-hidden"
+      >
+        <span
+          className="font-black text-5xl rotate-[-45deg] absolute right-2 top-0 cursor-pointer hover:transform hover:scale-90 transition-all duration-200"
+          onClick={handleClose}
+        >
+          X
+        </span>
         <img src={image} className="w-full h-screen object-cover object-center" />
-        <div className="w-full flex flex-row justify-between items-center p-4">
-          <h3>{title}</h3>
+        <div className="w-full flex flex-col justify-start items-left p-4">
+          <h3 className="font-bold text-4xl">{title}</h3>
           {promotion && (
             <div className="bg-red-700 absolute top-2 left-2 rounded-4xl px-1 py-0.5 font-light text-[0.85rem] text-white">
               {promotionValue}

@@ -52,7 +52,7 @@ export default function HeaderSection() {
 
   return (
     <div className="relative snap-start h-screen overflow-hidden">
-      <AnimatePresence mode="wait">
+      <AnimatePresence>
         <motion.img
           src={images[headerIMG]}
           key={headerIMG}
