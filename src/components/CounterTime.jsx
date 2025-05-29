@@ -63,9 +63,14 @@ const CounterTime = ({ title, description, promotionDate, image }) => {
     <div className="text-white border-b-2 border-white flex lg:flex-row flex-col items-center justify-between bg-black p-5  py-10 w-full">
       <div className="flex flex-col justify-center items-center">
         {title && <h2 className="text-center font-bold text-4xl text-white">{title}</h2>}
-        {description && <p className="text-center text-pretty font-light mt-2 mb-14 px-5 text-white">{description}</p>}
+        {description && (
+          <p className="text-center text-pretty font-light mt-2 mb-14 px-5 text-white">
+            {description}
+          </p>
+        )}
         <div className="text-gray-400 font-light pb-2">
-          promotion lasts until {`${endDate.getDate()}.${endDate.getMonth() + 1}.${endDate.getFullYear()}`}
+          promotion lasts until{" "}
+          {`${endDate.getDate()}.${endDate.getMonth() + 1}.${endDate.getFullYear()}`}
         </div>
         <div>{formatTime(remainingSeconds)}</div>
         <button className="mt-10 bg-pink-600 rounded-3xl font-bold px-14 py-2 text-xl w-1/2 hover:font-black hover:bg-pink-700 transition duration-300 ease-in-out hover:cursor-pointer">
