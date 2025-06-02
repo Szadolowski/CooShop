@@ -5,24 +5,27 @@ import FooterSection from "./components/FooterSection";
 import NavSection from "./components/NavSection";
 import CounterTime from "./components/CounterTime";
 import CategoryCard from "./components/CategoryCard";
-import { promotionCloth, promotionJewelry, category } from "./data.js";
+import Fetch from "./data/Fetch.jsx";
+import { promotionJewelry, category } from "./data.js";
 
 function App() {
+  const promotionCloth = [];
   const promotionTime = new Date();
   promotionTime.setDate(promotionTime.getDate() + 7);
   return (
     <>
+      <Fetch promotionCloth={promotionCloth} />
       <NavSection />
       <div>
         <HeaderSection />
-        <div className="relative flex flex-col items-center justify-items-start bg-gray-100 pt-10 pb-10">
-          <h2 className="text-center font-bold text-4xl">Featured Products</h2>
-          <p className="text-center text-pretty font-light mt-2 mb-14 px-5">
+        <div className="relative flex flex-col items-center pt-10 pb-10 bg-gray-100 justify-items-start">
+          <h2 className="text-4xl font-bold text-center">Featured Products</h2>
+          <p className="px-5 mt-2 font-light text-center text-pretty mb-14">
             Discover our carefully selected collection of the latest fashion and jewelry trends.
           </p>
           <ProductSection base={promotionCloth} sectionName={"Clothes"} />
           <ProductSection base={promotionJewelry} sectionName={"Jewelry"} />
-          <button className="border-2 border-black rounded-3xl px-14 py-2 text-xl hover:bg-black hover:text-white transition duration-300 ease-in-out hover:cursor-pointer">
+          <button className="py-2 text-xl transition duration-300 ease-in-out border-2 border-black rounded-3xl px-14 hover:bg-black hover:text-white hover:cursor-pointer">
             More Products
           </button>
         </div>
